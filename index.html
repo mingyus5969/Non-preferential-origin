@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none'; connect-src 'self' https://api.counterapi.com https://www.google-analytics.com https://region1.google-analytics.com;">
+<meta http-equiv="Content-Security-Policy" content="connect-src 'self' https://api.counterapi.dev;">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <title>비특혜 원산지 판정 가이드 포털 | 대외무역법령 기반</title>
 <meta name="description" content="대외무역법상 비특혜 원산지 판정의 개념과 기준, 관련 법령 및 판정 사례를 제공하는 공식 가이드 포털입니다.">
@@ -2284,7 +2284,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // 방문자 수 수집
     let totalVisits = 0;
-    fetch('https://api.counterapi.com/v1/non-preferential-origin-portal/visits/up')
+    fetch('https://api.counterapi.dev/v1/non-preferential-origin-portal/visits/up')
       .then(res => res.json())
       .then(data => {
         if (data && data.count !== undefined) {
