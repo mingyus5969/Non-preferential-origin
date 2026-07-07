@@ -472,16 +472,54 @@ tailwind.config = {
 
   <section id="guide" class="py-24 lg:py-32 bg-white scroll-mt-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mb-14 fade-in">
+      <div class="max-w-3xl mb-12 fade-in">
         <span class="section-kicker">SECTION 04</span>
         <h2 class="section-title text-[38px] sm:text-[46px] mt-4">신청 절차 안내</h2>
-        <p class="section-copy mt-4">관세청에 접수하는 원산지 사전판정 신청 프로세스와 필수 구비서류 목록입니다.</p>
+        <p class="section-copy mt-4">관세청에 접수하는 비특혜 원산지 판정 신청 프로세스와 필수 구비서류 목록입니다.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5 mb-5 fade-in delay-100">
+        <div class="bg-white border border-slate-200/80 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-[20px] shrink-0">
+            <i class="fa-solid fa-user-pen" aria-hidden="true"></i>
+          </div>
+          <div class="relative z-10 flex flex-col flex-1 min-w-0">
+            <h4 class="text-[15.5px] sm:text-[16px] font-bold text-slate-500 mb-0.5 tracking-tight">신청권자</h4>
+            <p class="text-[17px] sm:text-[17.5px] font-bold text-brand-navy tracking-tight truncate">
+              무역거래자 또는 물품 등의 판매업자 등
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200/80 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-[20px] shrink-0">
+            <i class="fa-solid fa-box-open" aria-hidden="true"></i>
+          </div>
+          <div class="relative z-10 flex flex-col flex-1 min-w-0">
+            <h4 class="text-[15.5px] sm:text-[16px] font-bold text-slate-500 mb-0.5 tracking-tight">신청대상</h4>
+            <p class="text-[17px] sm:text-[17.5px] font-bold text-brand-navy tracking-tight truncate">
+              수입물품 또는 수출물품
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200/80 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-[20px] shrink-0">
+            <i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
+          </div>
+          <div class="relative z-10 flex flex-col flex-1 min-w-0">
+            <h4 class="text-[15.5px] sm:text-[16px] font-bold text-slate-500 mb-0.5 tracking-tight">신청시기</h4>
+            <p class="text-[17px] sm:text-[17.5px] font-bold text-brand-navy tracking-tight truncate">
+              제한 없음
+            </p>
+          </div>
+        </div>
       </div>
       
-      <div class="border border-brand-navy bg-brand-navy p-8 sm:p-12 mb-10 relative overflow-hidden fade-in shadow-2xl shadow-brand-navy/10 rounded-3xl">
+      <div class="border border-brand-navy bg-brand-navy p-8 sm:p-12 mb-10 relative overflow-hidden fade-in delay-200 shadow-2xl shadow-brand-navy/10 rounded-3xl">
         <div class="absolute -right-20 -top-20 w-[400px] h-[400px] bg-[#1a365d] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
         <h3 class="text-[20px] font-bold text-white mb-10 flex items-center relative z-10">
-          <i class="fa-solid fa-clipboard-list text-brand-cyan mr-3 text-[22px]" aria-hidden="true"></i> 판정 신청 프로세스 (4단계)
+          <i class="fa-solid fa-clipboard-list text-brand-cyan mr-3 text-[22px]" aria-hidden="true"></i> 비특혜 원산지 판정 신청 프로세스 (4단계)
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-5 relative z-10">
           <!-- Step 1 -->
@@ -1966,7 +2004,7 @@ const CHART_DATA = {
   byp9:{t:'특정수입물품의 원산지',b:'[별표9]에 규정된 품목별 특별 요건을 충족하는 국가가 원산지가 됩니다. 세번변경 여부보다 해당 고시 공정의 수행 여부가 절대적 기준이 됩니다.',l:'대외무역관리규정 별표9'},
   s2:{t:'2단계 — 실질적 변형 여부<br><span class="block text-[14px] sm:text-[15.5px] font-medium text-slate-500 mt-1 pl-0.5">(HS 6단위 세번변경)</span>',b:'“실질적 변형”(HS 6단위 변형)을 가하여 그 물품의 본질적 특성을 부여한 국가를 원산지로 판정하며, “실질적 변형”이란 해당국에서의 공정을 통하여 HS 6단위 세번이 변경된 제품을 생산하는 것을 말합니다.\n\n• Y: 구조적 변형 발생. 단순가공 여부 판단(3단계)으로 진행\n• N: 세번 미변경. 세번 구분이 원천 불가한지(4단계) 검토',l:'대외무역법 시행령 제61조 및 대외무역관리규정 제85조 제2항'},
   s3:{t:'3단계 — 단순가공 여부 판단',b:'세번이 변경되었더라도, 수행한 공정이 규정상 열거된 단순 재단, 조립, 포장, 세척, 도장 등에 불과한 경우 새로운 원산지를 획득하지 못합니다.',l:'대외무역관리규정 제85조 8항'},
-  s4:{t:'4단계 — 구조상 세번 불가능성 여부',b:'물리적·화학적 변형이 확실히 일어났으나, 관세율표 분류 체계상 원재료와 완제품이 같은 호(HS)에 분류되어 구조적으로 세번이 변경될 수 없는 특이 품목인지 판단합니다.',l:'대외무역관리규정 제85조 3항'},
+  s4:{t:'4단계 — 구조상 세번 불가능성 여부',b:'물리적ㆍ화학적 변형 등이 확실히 일어나 본질적 특성을 부여함에도 불구하고 관세율표 분류 체계 상 세번(HS 6단위 기준)이 변경될 수 없는 특이 품목 인지를 판단합니다.',l:'대외무역관리규정 제85조 3항'},
   s5:{t:'5단계 — 부가가치 및 종합 특성 고려',b:'구조상 세번변경 불가 시, 제조 과정에서 창출된 부가가치 비율 및 주요 핵심 공정 수행 여부를 종합적으로 고려하여 본질적 특성 부여 국가를 판정합니다.',l:'대외무역관리규정 제85조, 제86조'},
 };
 
