@@ -3,32 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta http-equiv="Content-Security-Policy" content="connect-src 'self' https://api.counterapi.dev;">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
 <title>비특혜 원산지 판정 가이드 포털 | 대외무역법령 기반</title>
 <meta name="description" content="대외무역법상 비특혜 원산지 판정의 개념과 기준, 관련 법령 및 판정 사례를 제공하는 공식 가이드 포털입니다.">
-<link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" as="style">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" as="style" integrity="sha384-SN6A48CJQjx946+DRb8wsoifC4a8ur9ZS6R+HCTgnBHOKCa6GLXAR3Qn8d1jztxg" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" integrity="sha384-SN6A48CJQjx946+DRb8wsoifC4a8ur9ZS6R+HCTgnBHOKCa6GLXAR3Qn8d1jztxg" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
 
-<!-- Case Content Modal -->
-<div id="case-modal" class="modal-overlay fixed inset-0 z-[110] bg-[#071321]/60 backdrop-blur-md items-center justify-center p-4 md:p-6 shadow-2xl" role="dialog" aria-modal="true" aria-labelledby="case-modal-title">
-  <div class="bg-white rounded-3xl w-full max-w-3xl max-h-[85vh] flex flex-col shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] animate-modal relative">
-    <div class="px-6 py-5 md:px-8 md:py-6 border-b border-slate-100 flex justify-between items-center sticky top-0 bg-white/95 backdrop-blur z-20 rounded-t-3xl">
-      <h4 class="font-black text-brand-navy text-[18px] md:text-[21px] tracking-tight pr-4 leading-snug" id="case-modal-title"></h4>
-      <button onclick="closeModal('case-modal')" class="text-slate-400 hover:text-brand-pink tp w-9 h-9 flex shrink-0 items-center justify-center rounded-full hover:bg-brand-pink/10 cursor-pointer transition-colors" aria-label="모달 닫기"><i class="fa-solid fa-xmark text-xl" aria-hidden="true"></i></button>
-    </div>
-    <div id="case-modal-body" class="p-6 md:p-8 overflow-y-auto font-medium break-keep [&>*:first-child]:mt-0"></div>
-    <div class="p-5 md:p-6 border-t border-slate-100 flex justify-end bg-slate-50/50 rounded-b-3xl">
-      <button onclick="closeModal('case-modal')" class="btn-primary" style="padding: 0.7rem 1.8rem;">닫기</button>
-    </div>
-  </div>
-</div>
 <script>
 tailwind.config = {
   theme: {
@@ -118,6 +104,20 @@ tailwind.config = {
 </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col">
+<!-- Case Content Modal -->
+<div id="case-modal" class="modal-overlay fixed inset-0 z-[110] bg-[#071321]/60 backdrop-blur-md items-center justify-center p-4 md:p-6 shadow-2xl" role="dialog" aria-modal="true" aria-labelledby="case-modal-title">
+  <div class="bg-white rounded-3xl w-full max-w-3xl max-h-[85vh] flex flex-col shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] animate-modal relative">
+    <div class="px-6 py-5 md:px-8 md:py-6 border-b border-slate-100 flex justify-between items-center sticky top-0 bg-white/95 backdrop-blur z-20 rounded-t-3xl">
+      <h4 class="font-black text-brand-navy text-[18px] md:text-[21px] tracking-tight pr-4 leading-snug" id="case-modal-title"></h4>
+      <button onclick="closeModal('case-modal')" class="text-slate-400 hover:text-brand-pink tp w-9 h-9 flex shrink-0 items-center justify-center rounded-full hover:bg-brand-pink/10 cursor-pointer transition-colors" aria-label="모달 닫기"><i class="fa-solid fa-xmark text-xl" aria-hidden="true"></i></button>
+    </div>
+    <div id="case-modal-body" class="p-6 md:p-8 overflow-y-auto font-medium break-keep [&>*:first-child]:mt-0"></div>
+    <div class="p-5 md:p-6 border-t border-slate-100 flex justify-end bg-slate-50/50 rounded-b-3xl">
+      <button onclick="closeModal('case-modal')" class="btn-primary" style="padding: 0.7rem 1.8rem;">닫기</button>
+    </div>
+  </div>
+</div>
+
 <div id="scroll-progress" class="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-brand-cyan to-brand-purple z-[9999]" style="width: 0%;"></div>
 
 <header id="gnb" class="sticky top-0 z-40 bg-white/70 backdrop-blur-xl border-b border-white/50 tp shrink-0">
@@ -2009,7 +2009,7 @@ const CHART_DATA = {
   s5:{t:'5단계 — 부가가치 및 종합 특성 고려',b:'구조상 세번변경 불가 시, 제조 과정에서 창출된 부가가치 비율 및 주요 핵심 공정 수행 여부를 종합적으로 고려하여 본질적 특성 부여 국가를 판정합니다.',l:'대외무역관리규정 제85조, 제86조'},
 };
 
-// ─── Initialization ───────────────────────
+
 
 let currentPage = 1;
 const itemsPerPage = 12;
@@ -2139,17 +2139,17 @@ function renderPagination() {}
 function goToPage(p) {}
 
 
-// ─── Modals ───────────────────────
+
 function selNode(id) {
   const d = CHART_DATA[id];
   if (!d) return;
 
-  // Highlights
+  
   document.querySelectorAll('.node').forEach(el => el.classList.remove('selected-node'));
   const nodeEl = document.getElementById('node-' + id);
   if(nodeEl) nodeEl.classList.add('selected-node');
 
-  // Fill Modal Content
+  
   document.getElementById('flow-modal-title').innerHTML = d.t;
   let modalBody = d.b.replace(/\n/g, '<br>');
   
@@ -2169,7 +2169,7 @@ function selNode(id) {
     lawBadge.parentElement.classList.remove('flex');
   }
 
-  // Show Modal
+  
   document.getElementById('flow-modal').classList.add('show');
   document.body.style.overflow = 'hidden';
 }
@@ -2239,7 +2239,7 @@ function openPrincipleModal(type) {
   if(type === 'wholly') openModal('principle-modal');
 }
 
-// Common Modal functions
+
 function openModal(id) {
   document.getElementById(id).classList.add('show');
   document.body.style.overflow = 'hidden';
@@ -2250,7 +2250,7 @@ function closeModal(id) {
   document.body.style.overflow = '';
 }
 
-// ─── Scroll Effects & UI State ──────────────────────
+
 function initScrollEffects() {
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
@@ -2328,7 +2328,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(typeof initNavSpy === 'function') initNavSpy();
     if(typeof initKeyboard === 'function') initKeyboard();
     
-    // 방문자 수 수집
+    
     let totalVisits = 0;
     fetch('https://api.counterapi.dev/v1/non-preferential-origin-portal/visits/up')
       .then(res => res.json())
@@ -2338,10 +2338,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       })
       .catch(() => {
-        // CounterAPI 서비스 호출 실패 시 기본값 0을 유지합니다.
+        
       });
 
-    // Secret Admin Mode Trigger
     const secretTrigger = document.getElementById('secret-trigger');
     const statTotal = document.getElementById('stat-total');
     let clickCount = 0;
@@ -2363,6 +2362,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 });
+
 </script>
-</body>
-</html>
+</body></html>
