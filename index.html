@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>
+        </div>">
 <title>비특혜 원산지 판정 가이드 포털 | 대외무역법령 기반</title>
 <meta name="description" content="대외무역법상 비특혜 원산지 판정의 개념과 기준, 관련 법령 및 판정 사례를 제공하는 공식 가이드 포털입니다.">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" as="style" integrity="sha384-SN6A48CJQjx946+DRb8wsoifC4a8ur9ZS6R+HCTgnBHOKCa6GLXAR3Qn8d1jztxg" crossorigin="anonymous">
@@ -102,7 +103,7 @@ button:hover .law-iso > span { transform:translateY(-2px) scale(1.05); color:var
 .clear-btn-visible { display: flex !important; }
 </style>
 </head>
-<body class="antialiased min-h-screen flex flex-col">
+<body class="antialiased min-h-screen flex flex-col overflow-x-hidden">
 <!-- Case Content Modal -->
 <div id="case-modal" class="modal-overlay fixed inset-0 z-[110] bg-[#071321]/60 backdrop-blur-md items-center justify-center p-4 md:p-6 shadow-2xl" role="dialog" aria-modal="true" aria-labelledby="case-modal-title">
   <div class="bg-white rounded-3xl w-full max-w-3xl max-h-[85vh] flex flex-col shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] animate-modal relative">
@@ -155,13 +156,13 @@ button:hover .law-iso > span { transform:translateY(-2px) scale(1.05); color:var
   </div>
 </header>
   
-<main class="flex-1">
+<main class="flex-1 overflow-x-hidden">
   <section id="overview" class="relative bg-white pb-28 lg:pb-36 overflow-visible scroll-mt-20">
     <div class="soft-grid absolute inset-0 z-0 opacity-[0.85]"></div>
-    <div class="absolute top-[-20%] left-[-10%] w-[800px] h-[800px] bg-brand-cyan/25 blur-[160px] rounded-full mix-blend-multiply z-0 pointer-events-none animate-blob"></div>
-    <div class="absolute bottom-[-10%] right-[-5%] w-[900px] h-[900px] bg-brand-purple/20 blur-[180px] rounded-full mix-blend-multiply z-0 pointer-events-none animate-blob-rev"></div>
-    <div class="absolute top-[10%] right-[20%] w-[600px] h-[600px] bg-brand-pink/15 blur-[140px] rounded-full mix-blend-multiply z-0 pointer-events-none animate-blob [animation-delay:2s]"></div>
-    <div class="absolute bottom-[20%] left-[20%] w-[500px] h-[500px] bg-brand-amber/15 blur-[130px] rounded-full mix-blend-multiply z-0 pointer-events-none animate-blob-rev [animation-delay:4s]"></div>
+    <div class="absolute top-[-20%] left-[-10%] w-72 h-72 sm:w-[800px] sm:h-[800px] bg-brand-cyan/25 blur-[160px] rounded-full mix-blend-multiply z-0 pointer-events-none animate-blob"></div>
+    <div class="absolute bottom-[-10%] right-[-5%] w-80 h-80 sm:w-[900px] sm:h-[900px] bg-brand-purple/20 blur-[180px] rounded-full mix-blend-multiply z-0 pointer-events-none animate-blob-rev"></div>
+    <div class="absolute top-[10%] right-[20%] w-64 h-64 sm:w-[600px] sm:h-[600px] bg-brand-pink/15 blur-[140px] rounded-full mix-blend-multiply z-0 pointer-events-none animate-blob [animation-delay:2s]"></div>
+    <div class="absolute bottom-[20%] left-[20%] w-48 h-48 sm:w-[500px] sm:h-[500px] bg-brand-amber/15 blur-[130px] rounded-full mix-blend-multiply z-0 pointer-events-none animate-blob-rev [animation-delay:4s]"></div>
 
     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white z-0 pointer-events-none"></div>
 
@@ -207,7 +208,7 @@ button:hover .law-iso > span { transform:translateY(-2px) scale(1.05); color:var
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
            <!-- Grid Column 1: 수출입물품 (관세청 소관) -->
           <div class="flex flex-col gap-6">
-            <div class="glass-card rounded-2xl p-4 sm:p-5 flex flex-row items-center gap-4 hover-lift cursor-default group/card relative overflow-hidden">
+            <div class="glass-card rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4 hover-lift cursor-default group/card relative overflow-hidden">
               <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-[150%] skew-x-[-15deg] group-hover/card:animate-[shine_1.5s_ease-in-out]"></div>
               <div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-cyan flex items-center justify-center shrink-0 border border-blue-100 shadow-inner group-hover/card:scale-105 transition-transform duration-500">
                 <i class="fa-solid fa-ship text-xl" aria-hidden="true"></i>
@@ -234,7 +235,7 @@ button:hover .law-iso > span { transform:translateY(-2px) scale(1.05); color:var
 
           <!-- Grid Column 2: 국내생산물품 (산업통상부 소관) -->
           <div class="flex flex-col gap-6">
-            <div class="glass-card rounded-2xl p-4 sm:p-5 flex flex-row items-center gap-4 hover-lift cursor-default group/card relative overflow-hidden">
+            <div class="glass-card rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4 hover-lift cursor-default group/card relative overflow-hidden">
               <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-[150%] skew-x-[-15deg] group-hover/card:animate-[shine_1.5s_ease-in-out]"></div>
               <div class="w-14 h-14 rounded-xl bg-amber-50 text-brand-amber flex items-center justify-center shrink-0 border border-amber-100 shadow-inner group-hover/card:scale-105 transition-transform duration-500">
                 <i class="fa-solid fa-truck-fast text-xl" aria-hidden="true"></i>
@@ -323,12 +324,13 @@ button:hover .law-iso > span { transform:translateY(-2px) scale(1.05); color:var
         </button>
       </div>
       
-      <div class="glass-panel p-6 sm:p-10 block overflow-x-auto w-full fade-in">
-        <div class="w-full flex items-center justify-between mb-8 min-w-[1000px]">
+      <div class="glass-panel p-6 sm:p-10 block w-full fade-in">
+        <div class="w-full flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
           <h3 class="text-[20px] font-bold text-brand-navy flex items-center"><i class="fa-solid fa-sitemap mr-2.5 text-brand-cyan" aria-hidden="true"></i> 실질적 변형기준 판정 흐름도</h3>
           <span class="text-[13px] bg-white border border-brand-cyan/30 text-brand-cyan px-4 py-2 rounded-full font-bold flex items-center shadow-sm whitespace-nowrap"><i class="fa-regular fa-hand-pointer mr-2 animate-bounce" aria-hidden="true"></i>상세 설명을 보려면 각 노드를 클릭하세요</span>
         </div>
-        <svg id="origin-flowchart" viewBox="0 0 1160 640" class="w-full h-auto min-w-[1000px] font-sans" aria-label="원산지 판정 절차 플로우차트">
+        <div class="w-full overflow-x-auto pb-4">
+          <svg id="origin-flowchart" viewBox="0 0 1160 640" class="w-full h-auto min-w-[1000px] font-sans" aria-label="원산지 판정 절차 플로우차트">
           <defs>
             <marker id="arrow-navy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#071321" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
             <marker id="arrow-cyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#0052FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
@@ -416,6 +418,7 @@ button:hover .law-iso > span { transform:translateY(-2px) scale(1.05); color:var
           </g>
           <text x="30" y="620" fill="#64748B" font-size="14" font-weight="500">* [별표9] : 대외무역관리규정 제85조 제4항에서 별도로 정하는 물품</text>
         </svg>
+        </div>
       </div>
     </div>
   </section>
@@ -517,7 +520,7 @@ button:hover .law-iso > span { transform:translateY(-2px) scale(1.05); color:var
       </div>
       
       <div class="border border-brand-navy bg-brand-navy p-8 sm:p-12 mb-10 relative overflow-hidden fade-in delay-200 shadow-2xl shadow-brand-navy/10 rounded-3xl">
-        <div class="absolute -right-20 -top-20 w-[400px] h-[400px] bg-[#1a365d] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+        <div class="absolute -right-20 -top-20 w-40 h-40 sm:w-[400px] sm:h-[400px] bg-[#1a365d] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
         <h3 class="text-[20px] font-bold text-white mb-10 flex items-center relative z-10">
           <i class="fa-solid fa-clipboard-list text-brand-cyan mr-3 text-[22px]" aria-hidden="true"></i> 비특혜 원산지 판정 신청 프로세스 (4단계)
         </h3>
@@ -793,7 +796,7 @@ button:hover .law-iso > span { transform:translateY(-2px) scale(1.05); color:var
       <button onclick="closeModal('star9-modal')" class="text-slate-400 hover:text-brand-cyan tp w-9 h-9 flex items-center justify-center rounded-full hover:bg-brand-cyan/10 cursor-pointer transition-colors" aria-label="모달 닫기"><i class="fa-solid fa-xmark text-xl" aria-hidden="true"></i></button>
     </div>
     <div class="overflow-y-auto px-7 py-7 text-[14px] text-slate-700 flex-1 bg-white font-medium">
-      <div class="rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+      <div class="rounded-2xl border border-slate-200 overflow-x-auto overflow-y-hidden shadow-sm">
         <table class="w-full text-left bg-white">
           <thead class="bg-brand-navy text-white font-bold">
             <tr>
